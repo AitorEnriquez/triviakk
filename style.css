@@ -1,0 +1,57 @@
+
+body {
+    background-color:powderblue;
+}
+
+div:not(#todo,#puntuacion,#resultado) {
+    width: 10em;
+    text-align:center;
+    border-radius:1em;
+    font-size: 2em;
+    font-family: Verdana;
+    cursor:pointer;
+}
+
+#todo {
+    display:grid;
+    grid-gap: 1em;
+    /* grid-row-gap: none; */
+    /* grid-column-gap: 1em; */
+    grid-template-areas: 
+    "1 2 3"
+    "4 5 6";
+}
+
+#geografia {
+    grid-area:"1";
+    margin-top:none;
+    margin-left: 5em;
+    background-color:red;
+}
+#arte {
+    grid-area:"2";
+    margin-top:none;
+    margin-left:0;
+    background-color:green;
+}
+#espectaculos {
+    grid-area:"3";
+    margin-top:none;
+    background-color:orange;
+}
+#historia {
+    grid-area:"4";
+    margin-left: 5em;
+    background-color:blue;
+}
+#ciencias {
+    grid-area:"5";
+    background-color:purple;
+}
+#deportes {
+    grid-area:"6";
+    background-color:grey;
+}
+#puntuacion {
+    margin-top:5em;
+}

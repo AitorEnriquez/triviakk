@@ -5,9 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivia Aitor Enríquez</title>
-    <script src="js.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="bienvenida.js"></script>
 </head>
 <body>
     
-</body>
-</html>
+    <h1>Escoge una opción:</h1>
+    
+    <div id="todo">
+        <div onclick="pregunta(this)" id="geografia"><p>Geografía</p></div>
+        <div onclick="pregunta(this)" id="arte"><p>Arte</p></div>
+        <div onclick="pregunta(this)" id="espectaculos"><p>Espectáculos</p></div>
+        <div onclick="pregunta(this)"id="historia"><p>Historia</p></div>
+        <div onclick="pregunta(this)" id="ciencias"><p>Ciencias</p></div>
+        <div onclick="pregunta(this)" id="deportes"><p>Deportes</p></div>
+    </div>
+    
+    <div id="puntuacion">
+            <h2 id="puntuacionTotal">Respuestas correctas: 0</h2>
+            <h2 id="puntuacionErronea">Respuestas erróneas: 0</h2>
+        </div>
+        
+        <div id="resultado">
+            <h1 id="resultado1"></h1>
+            <h2 id="resultado2"></h2>
+        </div>
+        
+        <script src="js.js"></script>
+    </body>
+    </html>
